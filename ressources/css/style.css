@@ -135,3 +135,31 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/*-----------RESET CSS------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit {
+    display: block;    
+    margin: auto;
+    writing-mode: color black;
+}
+
+.logo {
+    width: 100%;
+}
