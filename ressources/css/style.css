@@ -141,10 +141,39 @@ table {
 
 body {
     padding: 2em;
+    background-color: #d9d9d9;
+    overflow-x: hidden;
 }
 
 #match {
     width: 100%;
+}
+
+#match>h1 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+#match h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+nav>img {
+    width: 2em;
+}
+
+#match h4 {
+    font-size: small;
+    font-style: italic;
 }
 
 #match>ul {
@@ -154,14 +183,14 @@ body {
 
 #match>ul>li {
     display: flex;
-    padding: 5px;
+    margin: 1em;
     flex-direction: column;
     align-items: center;
 }
 
 #match>ul>li>img {
-    border-radius: 50px;
-    width: 50px;
+    border-radius: 5em;
+    width: 5em;
 }
 
 #conv {
@@ -172,20 +201,31 @@ body {
 #conv>div {
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    margin: 0.5em;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+#conv>div>div>h3 {
+    font-weight: bold;
 }
 
 #conv>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conv>div>p {
+    margin-bottom: 5px;
+    display: block;
+    font-style: italic;
     align-self: center;
 }
 
-#conv>div>div>span {
-    margin-bottom: 5px;
-    display: block;
-}
-
-#conv>div>img {
-    border-radius: 50px;
-    width: 50px;
+#conv>div>div>img {
+    border-radius: 4em;
+    width: 4em;
     padding: 5px;
 }
