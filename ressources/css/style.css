@@ -127,11 +127,65 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
+    content: "";
     content: none;
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+
+/*=========RESET CSS==========*/
+
+body {
+    padding: 2em;
+}
+
+#match {
+    width: 100%;
+}
+
+#match>ul {
+    display: flex;
+    overflow-x: scroll;
+}
+
+#match>ul>li {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#match>ul>li>img {
+    border-radius: 50px;
+    width: 50px;
+}
+
+#conv {
+    display: flex;
+    flex-direction: column;
+}
+
+#conv>div {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+#conv>div>div {
+    align-self: center;
+}
+
+#conv>div>div>span {
+    margin-bottom: 5px;
+    display: block;
+}
+
+#conv>div>img {
+    border-radius: 50px;
+    width: 50px;
+    padding: 5px;
 }
