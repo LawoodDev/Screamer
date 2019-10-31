@@ -189,6 +189,16 @@ nav>img {
     align-items: center;
 }
 
+.submit {
+    display: block;
+    margin: auto;
+    writing-mode: color black;
+}
+
+.logo {
+    width: 100%;
+}
+
 #match>ul>li>img {
     border-radius: 5em;
     width: 5em;
