@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -140,6 +141,8 @@ table {
 /*=========RESET CSS==========*/
 
 
+=======
+>>>>>>> 7c03e4f772f71e7d5155ef547181ad78897ef2b4
 .topbar {
     float: left;
     margin: auto;
@@ -173,7 +176,10 @@ table {
     width: 280px;
     height: 250px;
     background-color: pink;
+<<<<<<< HEAD
     display: none;
+=======
+>>>>>>> 7c03e4f772f71e7d5155ef547181ad78897ef2b4
 }
 
 .banniere2 {
@@ -194,6 +200,7 @@ table {
 .button {
     display: inline-block;
     white-space: normal;
+<<<<<<< HEAD
     margin: 50px;
 }
 
@@ -213,4 +220,8 @@ table {
     flex-direction: row;
     margin: 45px;
     height: 50px;
+=======
+    margin: auto;
+    padding: 10px;
+>>>>>>> 7c03e4f772f71e7d5155ef547181ad78897ef2b4
 }
