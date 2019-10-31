@@ -1,3 +1,16 @@
+/* People */
+.profil {
+    text-align: center;
+    text-decoration: underline overline #FF3028;
+    padding: 10px;
+}
+
+
+/* Conversation */
+.conversation {
+margin-top: 100px;
+}
+
 .me
 {
     align-self: flex-end;
@@ -19,9 +32,30 @@ ul>li
     align-self: flex-start;
     background-color: lightskyblue;
 }
+
+/* Input */
+
+.inputMode 
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
 input 
 {
     width: 100%;
     padding: 10px;
     border-radius: 25px;
+    margin-top: 100px;
+}
+
+#buttonSend {
+    width: 2em;
+    position: relative;
+    padding-top: 102px;
+    padding-left: 10px;
 }
