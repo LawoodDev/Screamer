@@ -27,9 +27,6 @@ public class User {
     public String getEmail() {
         return email;
     }
-    public String getPass(){
-        return password;
-    }
     public boolean comparePassword(String password){
         return password.equals(this.password);
     }

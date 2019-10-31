@@ -168,7 +168,7 @@ nav {
     margin-bottom: 10px;
 }
 
-nav>img {
+nav>a>img {
     width: 2.8em;
 }
 
@@ -204,12 +204,12 @@ nav>img {
     width: 5em;
 }
 
-#conv {
+#convlist {
     display: flex;
     flex-direction: column;
 }
 
-#conv>div {
+#convlist>div {
     display: flex;
     flex-direction: row;
     margin: 0.5em;
@@ -218,24 +218,24 @@ nav>img {
     padding: 1em;
 }
 
-#conv>div>div>h3 {
+#convlist>div>div>h3 {
     font-weight: bold;
 }
 
-#conv>div>div {
+#convlist>div>div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#conv>div>p {
+#convlist>div>p {
     margin-bottom: 5px;
     display: block;
     font-style: italic;
     align-self: center;
 }
 
-#conv>div>div>img {
+#convlist>div>div>img {
     border-radius: 4em;
     width: 4em;
     padding: 5px;

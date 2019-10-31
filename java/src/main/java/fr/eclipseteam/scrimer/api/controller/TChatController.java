@@ -25,13 +25,13 @@ public class TChatController {
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
                 value = "/api/conv/create")
     @ResponseBody
-    public Conv createConv(@RequestBody ArrayList<User> users) {
+    public Conv createConv(@RequestBody ArrayList<String> users) {
         if(users.size()!= 2)
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
-        Conv conv = new Conv(users.get(0), users.get(1));
+        Conv conv = new Conv(App.getInstance().getActiveUserList().get(users.get(0)), App.getInstance().getActiveUserList().get(users.get(1)));
 
-        for(User us:users)
-            App.getInstance().getActiveUserList().get(us.getUuid()).getConvList().add(conv.getUuid());
+        for(String uuid : users)
+            App.getInstance().getActiveUserList().get(uuid).getConvList().add(conv.getUuid());
 
         App.getInstance().getConvList().put(conv.getUuid(),conv);
         return conv;
@@ -45,8 +45,14 @@ public class TChatController {
 
     @GetMapping(value = "/api/conv/{uuid}")
     @ResponseBody
-    public Conv getConv(@RequestParam String uuid) {
+    public Conv getConv(@PathVariable("uuid") String uuid) {
         return App.getInstance().getConvList().get(uuid);
+    }
+
+    @GetMapping(value = "/api/conv/{uuid}/last")
+    @ResponseBody
+    public Message getLastConMessage(@PathVariable("uuid") String uuid) {
+        return App.getInstance().getConvList().get(uuid).getLastMessage();
     }
 
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},

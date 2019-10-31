@@ -17,7 +17,20 @@ public class Conv {
     public void addUser(User us){
         this.usersMessages.put(us.getUuid(), new ArrayList<>());
     }
-
+    public Message getLastMessage(){
+        Message last=null;
+        for(var userMes : usersMessages.values()) {
+            for (var m : userMes) {
+                if (last != null) {
+                    if (m.getTime().after(last.getTime()))
+                        last = m;
+                } else {
+                    last = m;
+                }
+            }
+        }
+        return last;
+    }
     public String getUuid() {
         return uuid;
     }

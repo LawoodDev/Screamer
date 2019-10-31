@@ -1,0 +1,21 @@
+.me{
+    align-self: flex-end;
+    background-color: limegreen;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+ul>li{
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.him{
+    align-self: flex-start;
+    background-color: lightskyblue;
+}
+input {
+    width: 100%;
+    padding: 10px;
+}

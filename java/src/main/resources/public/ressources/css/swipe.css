@@ -1,0 +1,56 @@
+.topbar {
+    float: left;
+    margin: auto;
+    height: 60px;
+    width: 100%;
+    background: grey;
+    writing-mode: color white;
+    padding: 5px;
+}
+
+.topbar nav {
+    display: flex;
+    float: left;
+    margin: auto;
+    text-align: left;
+}
+
+.topbar nav a {
+    color: #ffffff9f;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.topbar nav a:hover, .topbar nav a.active {
+    color: white;
+}
+
+.banniere {
+    margin: auto;
+    width: 280px;
+    height: 250px;
+    background-color: pink;
+}
+
+.banniere2 {
+    margin: auto;
+    width: 500px;
+    height: 100px;
+    background-color: grey;
+}
+
+.h2 {
+    text-align: left;
+}
+
+.p {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    white-space: normal;
+    margin: auto;
+    padding: 10px;
+}

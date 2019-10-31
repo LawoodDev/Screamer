@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*=========RESET CSS==========*/
+
+body {
+    font-family: Open Sans;
+    padding: 2em;
+    background-color: #d9d9d9;
+    overflow-x: hidden;
+}
+
+#match {
+    width: 100%;
+}
+
+#match>h1 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+#match h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+nav>a>img {
+    width: 2.8em;
+}
+
+#match h4 {
+    font-size: x-small;
+    font-style: italic;
+}
+
+#match>ul {
+    display: flex;
+    overflow-x: scroll;
+}
+
+#match>ul>li {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit {
+    display: block;
+    margin: auto;
+    writing-mode: color black;
+}
+
+.logo {
+    width: 100%;
+}
+
+#match>ul>li>img {
+    border-radius: 5em;
+    width: 5em;
+}
+
+#convlist {
+    display: flex;
+    flex-direction: column;
+}
+
+#convlist>div {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+#convlist>div>div>h3 {
+    font-weight: bold;
+}
+
+#convlist>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#convlist>div>p {
+    margin-bottom: 5px;
+    display: block;
+    font-style: italic;
+    align-self: center;
+}
+
+#convlist>div>div>img {
+    border-radius: 4em;
+    width: 4em;
+    padding: 5px;
+}
